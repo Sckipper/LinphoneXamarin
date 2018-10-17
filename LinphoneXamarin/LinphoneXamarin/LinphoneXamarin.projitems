@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>3140639c-dbdb-458f-9284-68875c7c6374</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>LinphoneXamarin</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Layout\LaunchScreen.xaml.cs">
+      <DependentUpon>LaunchScreen.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)LinphoneWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Values\Colors.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Values\Strings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layout\LaunchScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\add_field_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\add_field_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\arrow_accept.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\arrow_hangup.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\avatar.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\avatar_chat_mask.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\avatar_chat_mask_outgoing.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\avatar_mask.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\avatar_mask_border.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\back.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\backspace_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\backspace_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\backspace_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\back_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_add.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_alt_back.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_alt_start.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_audio_start.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_back.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_hangup.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_incoming.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_missed.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_outgoing.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_quality_indicator_0.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_quality_indicator_1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_quality_indicator_2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_quality_indicator_3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_quality_indicator_4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_start_body_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_start_body_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_start_body_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_status_incoming.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_status_missed.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_status_outgoing.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_transfer.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\call_video_start.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\camera_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\camera_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\camera_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\camera_switch_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\camera_switch_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\camera_switch_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\cancel_edit.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_add.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_attachment.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_attachment_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_attachment_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_delivered.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_error.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_file_message.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_group_add.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_group_avatar.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_group_delete.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_group_informations.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_group_informations_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_list_indicator.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_message_delivered.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_message_inprogress.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_message_not_delivered.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_picture_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_read.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_secure.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_send_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_send_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_start_body_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_start_body_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_start_body_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\chat_unsecure.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\checkbox_checked.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\checkbox_unchecked.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\check_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\check_unselected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\clean_field_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\clean_field_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\conference_exit_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\conference_exit_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\conference_start.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\contact.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\contacts_all_.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\contacts_all_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\contacts_all_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\contacts_sip_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\contacts_sip_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\contact_add.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\contact_add_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\delete.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\delete_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\delete_field_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\delete_field_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\deselect_all.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\dialer_alt_back.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\dialer_alt_next.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\dialer_back.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\dialer_background.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\edit.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\edit_list.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\edit_list_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\event_gray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\fast_scroll_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\fast_scroll_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\footer_chat.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\footer_contacts.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\footer_dialer.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\footer_history.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\history_all_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\history_all_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\history_chat_indicator.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\history_missed_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\history_missed_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\info.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\led_connected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\led_disconnected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\led_error.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\led_inprogress.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\lime_ko.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\linphone_logo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\linphone_logo_orange.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\linphone_notification_icon.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\linphone_user.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\list_details_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\list_details_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\menu.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\menu_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\message_delivered.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\message_read.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\message_undelivered.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\micro_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\micro_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\micro_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\next.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\next_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_0.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_0_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_1_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_2_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_3_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_4_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_5.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_5_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_6.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_6_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_7.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_7_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_8.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_8_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_9_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_hash.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_hash_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_star.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\numpad_star_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\options_add_call.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\options_add_call_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\options_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\options_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\options_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\options_start_conference.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\options_start_conference_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\options_transfer_call.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\options_transfer_call_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\pause_big_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\pause_big_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\pause_big_over_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\pause_small_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\pause_small_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\pause_small_over_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\quit_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\quit_over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\resizable_assistant_button.9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\resizable_assistant_button_disabled.9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\resizable_assistant_button_over.9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\resizable_cancel_button.9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\resizable_chat_bubble_incoming.9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\resizable_chat_bubble_outgoing.9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\resizable_confirm_delete_button.9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\resizable_textfield.9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\resizable_textfield_error.9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\routes_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\routes_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\route_bluetooth.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\route_bluetooth_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\route_earpiece.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\route_earpiece_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\route_speaker.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\route_speaker_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\security_ko.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\security_ok.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\security_pending.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\select_all.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\speaker_default.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\speaker_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\speaker_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\splashscreen.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_available.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_available_desktop.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_available_phone.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_away.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_away_desktop.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_away_phone.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_busy.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_busy_desktop.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_busy_phone.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_disconnected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_disconnected_desktop.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\status_disconnected_phone.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\topbar_avatar.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\topbar_call_notification.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\topbar_chat_notification.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\topbar_videocall_notification.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\valid.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\valid_disabled.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\voicemail.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Drawable\waiting_time.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Values\attrs.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Values\color.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Values\config.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Values\digit_style.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Values\non_localizable_custom.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Values\non_localizable_strings.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Values\slidingtab_style.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Values\strings.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Values\styles.xml" />
+  </ItemGroup>
+</Project>
