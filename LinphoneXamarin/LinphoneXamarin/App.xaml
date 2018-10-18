@@ -2,9 +2,227 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LinphoneXamarin.App">
-	<Application.Resources>
+    <Application.Resources>
 
-		<!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <!-- Colors -->
+            <Color x:Key="colorA">#97cd75</Color>
+            <Color x:Key="colorB">#000000</Color>
+            <Color x:Key="colorC">#444444</Color>
+            <Color x:Key="colorD">#808080</Color>
+            <Color x:Key="colorE">#c4c4c4</Color>
+            <Color x:Key="colorF">#e1e1e1</Color>
+            <Color x:Key="colorG">#f3f3f3</Color>
+            <Color x:Key="colorH">#ffffff</Color>
+            <Color x:Key="colorI">#ff0000</Color>
+            <Color x:Key="colorJ">#ffa645</Color>
+            <Color x:Key="colorK">#3eb5c0</Color>
+            <Color x:Key="colorL">#96c11f</Color>
+            <Color x:Key="notification_color_led">#FF8000</Color>
 
-	</Application.Resources>
-</Application>
+            <Color x:Key="transparent">#00000000</Color>
+            <!-- /Colors -->
+
+            <!-- Fonts -->
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource colorA}"/>
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+
+
+            <Style x:Key="Font1" TargetType="Label">
+                <!--<Setter Property="FontSize" Value="Medium"/>-->
+                <Setter Property="TextColor"  Value="{StaticResource colorA}"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+                <Setter Property="FontSize" Value="24"></Setter>
+            </Style>
+
+            <Style x:Key="font2">
+                <!--<Setter Property="FontSize" Value="Medium"/>-->
+                <Setter Property="TextColor" Value="{StaticResource colorA}"></Setter>
+                <Setter Property="FontSize">16sp</Setter>
+            </Style>
+
+            <Style x:Key="font3">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorA</Setter>
+                <Setter Property="FontSize">13sp</Setter>
+            </Style>
+
+            <Style x:Key="font4">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorB}</Setter>
+                <Setter Property="textAllCaps">true</Setter>
+                <Setter Property="textStyle">bold</Setter>
+                <Setter Property="FontSize">21sp</Setter>
+            </Style>
+
+            <Style x:Key="font5">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorC}</Setter>
+                <Setter Property="FontSize">30sp</Setter>
+            </Style>
+
+            <Style x:Key="font6">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorC}</Setter>
+                <Setter Property="FontSize">20sp</Setter>
+            </Style>
+
+            <Style x:Key="font7">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorC}</Setter>
+                <Setter Property="textStyle">bold</Setter>
+                <Setter Property="FontSize">18sp</Setter>
+            </Style>
+
+            <Style x:Key="font8">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorC}</Setter>
+                <Setter Property="textAllCaps">true</Setter>
+                <Setter Property="FontSize">16sp</Setter>
+            </Style>
+
+            <Style x:Key="font9">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorC}</Setter>
+                <Setter Property="FontSize">13sp</Setter>
+            </Style>
+
+            <Style x:Key="font10" >
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorD}</Setter>
+                <Setter Property="FontSize">18sp</Setter>
+            </Style>
+
+            <Style x:Key="font11" >
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorD}</Setter>
+                <Setter Property="FontSize">15sp</Setter>
+            </Style>
+
+            <Style x:Key="font12">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorE}</Setter>
+                <Setter Property="FontSize">16sp</Setter>
+            </Style>
+
+            <Style x:Key="font13" >
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorE}</Setter>
+                <Setter Property="FontSize">13sp</Setter>
+            </Style>
+
+            <Style x:Key="font14">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorH}</Setter>
+                <Setter Property="FontSize">21sp</Setter>
+            </Style>
+
+            <Style x:Key="font15">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorH}</Setter>
+                <Setter Property="textAllCaps">true</Setter>
+                <Setter Property="FontSize">16sp</Setter>
+            </Style>
+
+            <Style x:Key="font16">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorH}</Setter>
+                <Setter Property="FontSize">15sp</Setter>
+            </Style>
+
+            <Style x:Key="font17">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorH}</Setter>
+                <Setter Property="textStyle">bold</Setter>
+                <Setter Property="FontSize">13sp</Setter>
+            </Style>
+
+            <Style x:Key="font18">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorH}</Setter>
+                <Setter Property="FontSize">10sp</Setter>
+            </Style>
+
+            <Style x:Key="font19" >
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorD]</Setter>
+                <Setter Property="textStyle">bold</Setter>
+                <Setter Property="textAllCaps">true</Setter>
+                <Setter Property="FontSize">13sp</Setter>
+            </Style>
+
+            <Style x:Key="font20">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorI}</Setter>
+                <Setter Property="FontSize">14sp</Setter>
+            </Style>
+
+            <Style x:Key="font21">
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="TextColor">{StaticResource colorH}</Setter>
+                <Setter Property="textAllCaps">true</Setter>
+                <Setter Property="FontSize">50sp</Setter>
+            </Style>
+
+            <Style x:Key="font22">
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="TextColor">{StaticResource colorH}</Setter>
+                <Setter Property="textAllCaps">true</Setter>
+                <Setter Property="textStyle">bold</Setter>
+                <Setter Property="FontSize">25sp</Setter>
+            </Style>
+
+            <Style x:Key="font23" >
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorD}</Setter>
+                <Setter Property="FontSize">18sp</Setter>
+                <Setter Property="textStyle">italic</Setter>
+            </Style>
+
+            <Style x:Key="font24">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorB}</Setter>
+                <Setter Property="FontSize">13sp</Setter>
+            </Style>
+
+            <Style x:Key="font25">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor">{StaticResource colorH}</Setter>
+                <Setter Property="FontSize">21sp</Setter>
+                <Setter Property="textStyle">bold</Setter>
+            </Style>
+
+            <Style x:Key="font26" >
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorD}</Setter>
+                <Setter Property="FontSize">12sp</Setter>
+            </Style>
+
+            <Style x:Key="font27" >
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorK}</Setter>
+                <Setter Property="FontSize">15sp</Setter>
+                <Setter Property="textStyle">bold</Setter>
+            </Style>
+
+            <Style x:Key="font28">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorD}</Setter>
+                <Setter Property="FontSize">15sp</Setter>
+                <Setter Property="textStyle">bold</Setter>
+            </Style>
+
+            <Style x:Key="font29">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor">{StaticResource colorI}</Setter>
+                <Setter Property="FontSize">15sp</Setter>
+                <Setter Property="textStyle">bold</Setter>
+            </Style>
+            <!-- /Fonts -->
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application> 

@@ -19,6 +19,7 @@ namespace LinphoneXamarin
 
         public App (string rc_path = null)
         {
+            InitializeComponent();
             LinphoneWrapper.setNativeLogHandler();
 
             Core.SetLogLevelMask(0xFF);
